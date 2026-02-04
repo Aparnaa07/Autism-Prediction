@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container result-box">
+    <h2>Prediction Result</h2>
+
+    <p><strong>Risk Score:</strong> {{ risk }}</p>
+
+    {% if level == "Low Risk" %}
+        <p class="low">{{ level }}</p>
+    {% elif level == "Moderate Risk" %}
+        <p class="moderate">{{ level }}</p>
+    {% else %}
+        <p class="high">{{ level }}</p>
+    {% endif %}
+
+    <a href="/history/{{ child_id }}">View Risk Progression</a><br>
+    <a href="/">New Screening</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Progression</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Risk Progression</h2>
+    <p><strong>Child ID:</strong> {{ child_id }}</p>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Risk Score</th>
+        </tr>
+        {% for r in records %}
+        <tr>
+            <td>{{ r[0] }}</td>
+            <td>{{ r[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/graph/{{ child_id }}">View Risk Progression Graph</a>
+
+
+    <a href="/">Back</a>
+</div>
+
+</body>
+</html>

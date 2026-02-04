@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Risk Progression Graph</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Risk Progression Graph</h2>
+
+    <p><strong>Child ID:</strong> {{ child_id }}</p>
+
+    <img src="{{ url_for('static', filename=graph_image) }}" 
+         alt="Risk Graph" 
+         style="width:100%; margin-top:15px;">
+
+    <a href="/history/{{ child_id }}">Back to History</a><br>
+    <a href="/">New Screening</a>
+</div>
+
+</body>
+</html>

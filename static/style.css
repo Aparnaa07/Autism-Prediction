@@ -1,0 +1,183 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- PAGE BACKGROUND ---------- */
+body {
+    background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- MAIN CARD ---------- */
+.container {
+    background: #ffffff;
+    width: 460px;
+    padding: 28px 32px;
+    border-radius: 16px;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- MAIN HEADING ---------- */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+
+    /* Gradient text */
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- HEADING WRAPPER ---------- */
+.heading-box {
+    background: #f4f7ff;
+    padding: 16px 10px 18px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    box-shadow: inset 0 0 0 1px #e0e6ff;
+}
+
+/* ---------- SUBTITLE ---------- */
+.heading-box p {
+    text-align: center;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 6px;
+}
+
+/* ---------- SUBTEXT / DISCLAIMER ---------- */
+.disclaimer {
+    text-align: center;
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 18px;
+}
+
+/* ---------- FORM LABELS ---------- */
+label {
+    display: block;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+/* ---------- INPUTS ---------- */
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+    outline: none;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(37, 117, 252, 0.4);
+}
+
+/* ---------- RESULT TEXT ---------- */
+.result-box {
+    text-align: center;
+}
+
+.low {
+    color: #2ecc71;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.moderate {
+    color: #f39c12;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.high {
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ---------- LINKS ---------- */
+a {
+    display: inline-block;
+    margin-top: 14px;
+    text-decoration: none;
+    color: #2575fc;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- TABLE (HISTORY PAGE) ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+table th {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 9px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
